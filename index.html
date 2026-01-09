@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBEC - Earl Brown Educational Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent py-3 transition-all">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.ebec.co/assets/img/logo.png" alt="EBEC Logo" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-2">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Case Studies</a></li>
+                    <li class="nav-item ms-lg-2">
+                        <a href="#" class="btn btn-outline-light rounded-pill px-4 btn-sm">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="btn btn-orange rounded-pill px-4 btn-sm">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-wrapper bg-dark-blue position-relative">
+        <div class="container position-relative z-2 h-100">
+            <div class="row align-items-center h-100 pt-5">
+                <div class="col-lg-6 pt-5 mb-5 mb-lg-0">
+                    <div class="d-inline-block px-3 py-2 mb-4 bg-white rounded-3 shadow-sm text-dark-blue fw-bold text-sm">
+                        Never stop learning
+                    </div>
+                    <h1 class="display-4 fw-bold text-white mb-4 lh-tight">
+                        Grow up your skills by <span class="text-orange">Consulting</span> with EBEC
+                    </h1>
+                    <p class="lead text-gray-300 mb-5 pe-lg-5">
+                        We empower schools, businesses, and communities with transformative educational consulting that creates lasting impact.
+                    </p>
+                    
+                    <div class="d-flex align-items-center flex-wrap gap-4">
+                        <a href="#" class="btn btn-orange btn-lg rounded-3 px-4 fw-bold">EXPLORE PATH</a>
+                        
+                        <div class="d-flex align-items-center">
+                            <div class="user-stack d-flex">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=64&h=64" class="rounded-circle border border-2 border-dark" width="45" height="45" alt="User">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=64&h=64" class="rounded-circle border border-2 border-dark ms-n3" width="45" height="45" alt="User">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=64&h=64" class="rounded-circle border border-2 border-dark ms-n3" width="45" height="45" alt="User">
+                            </div>
+                            <div class="ms-3">
+                                <div class="text-warning text-xs">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <span class="text-white text-xs fw-medium">(10k+ Reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative text-center mt-4 mt-lg-0">
+                    <div class="hero-blob"></div>
+                    
+                    <div class="position-relative d-inline-block z-2 hero-image-container">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" alt="Student" class="img-fluid position-relative z-2 hero-main-img rounded-4">
+                        
+                        <div class="floating-card card-stats bg-white p-3 rounded-4 shadow-lg d-flex align-items-center gap-3">
+                            <div class="icon-box bg-info-subtle text-info rounded-3 p-2">
+                                <i class="fa-regular fa-calendar-check fa-lg"></i>
+                            </div>
+                            <div class="text-start">
+                                <h5 class="fw-bold text-dark mb-0">250k</h5>
+                                <small class="text-muted">Assisted Student</small>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-icon bg-orange p-3 rounded-4 shadow-lg text-white">
+                            <i class="fa-solid fa-chart-simple fa-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="play-button-wrapper">
+            <button type="button" class="btn-play-pulse" data-bs-toggle="modal" data-bs-target="#videoModal">
+                <i class="fa-solid fa-play"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-black border-0">
+                <div class="modal-header border-0 position-absolute top-0 end-0 z-3">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <video id="heroVideo" controls>
+                            <source src="https://www.ebec.co/assets/img/EBEC_Short_Video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-padding bg-light pt-6">
+        <div class="container pt-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6 text-dark-blue">Select Your Organization</h2>
+                <p class="text-muted col-lg-6 mx-auto">We specialize in providing targeted solutions for various sectors.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-soft rounded-4 overflow-hidden hover-y-shift">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="School District">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark-blue mb-3">School Districts</h5>
+                            <p class="text-muted text-sm mb-4">Comprehensive curriculum development and faculty training tailored for K-12 educational success.</p>
+                            <a href="#" class="text-orange fw-bold text-decoration-none text-sm link-arrow">
+                                Learn More <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-soft rounded-4 overflow-hidden hover-y-shift">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Companies">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark-blue mb-3">Companies</h5>
+                            <p class="text-muted text-sm mb-4">Ensure the emotional intelligence of companies and promote your business with enthusiastic strategies.</p>
+                            <a href="#" class="text-orange fw-bold text-decoration-none text-sm link-arrow">
+                                Learn More <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-soft rounded-4 overflow-hidden hover-y-shift">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Colleges">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark-blue mb-3">Colleges</h5>
+                            <p class="text-muted text-sm mb-4">Colleges and classes institutions for retention, student engagement, and campus community growth.</p>
+                            <a href="#" class="text-orange fw-bold text-decoration-none text-sm link-arrow">
+                                Learn More <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-soft rounded-4 overflow-hidden hover-y-shift">
+                        <div class="card-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Community">
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="fw-bold text-dark-blue mb-3">Community & Govt</h5>
+                            <p class="text-muted text-sm mb-4">Community organizations & Government alignment with social programs and economic development.</p>
+                            <a href="#" class="text-orange fw-bold text-decoration-none text-sm link-arrow">
+                                Learn More <i class="fa-solid fa-arrow-right ms-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <span class="text-orange fw-bold text-uppercase text-xs ls-wide">Our Solutions</span>
+                    <h2 class="display-6 fw-bold mt-2 mb-4 text-dark-blue">Comprehensive Solutions for <span class="text-orange">Excellence</span></h2>
+                    <p class="text-muted mb-4">We offer integrated, evidence-based development programs that prioritize student success, educator well-being, and organizational efficiency.</p>
+                    <a href="#" class="btn btn-orange rounded-pill px-4 mb-5">Check Services</a>
+
+                    <div class="d-flex gap-5 mt-2">
+                        <div>
+                            <h3 class="fw-bold text-dark-blue mb-0">18+</h3>
+                            <span class="text-muted text-sm">Years Experience</span>
+                        </div>
+                        <div>
+                            <h3 class="fw-bold text-dark-blue mb-0">200+</h3>
+                            <span class="text-muted text-sm">Consultants</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <div class="d-flex flex-column gap-3">
+                        <div class="card border-0 shadow-sm p-2 transition-hover">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-orange-subtle text-orange">
+                                    <i class="fa-solid fa-child-reaching"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-dark-blue mb-1">Student & Youth Development</h6>
+                                    <p class="text-muted text-sm mb-0">Creating pathways for academic and social growth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm p-2 transition-hover">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-danger-subtle text-danger">
+                                    <i class="fa-solid fa-chalkboard-user"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-dark-blue mb-1">Educator Training & Development</h6>
+                                    <p class="text-muted text-sm mb-0">Workshops on pedagogy, inclusion, and leadership.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm p-2 transition-hover">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-primary-subtle text-primary">
+                                    <i class="fa-solid fa-handshake"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-dark-blue mb-1">Parent & Community Engagement</h6>
+                                    <p class="text-muted text-sm mb-0">Bridging the gap between schools and families.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card border-0 shadow-sm p-2 transition-hover">
+                            <div class="card-body d-flex align-items-center gap-3">
+                                <div class="icon-circle bg-success-subtle text-success">
+                                    <i class="fa-solid fa-chess"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold text-dark-blue mb-1">Strategic Consulting</h6>
+                                    <p class="text-muted text-sm mb-0">Data-driven analysis for operational improvement.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-dark-blue text-white">
+        <div class="container text-center">
+            <span class="badge bg-white-10 text-white rounded-pill px-3 py-2 mb-3 border border-secondary border-opacity-25">Our Impact</span>
+            <h2 class="fw-bold mb-5">Making a Difference That Matters</h2>
+            
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded bg-white-05 border border-white border-opacity-10">
+                        <h2 class="text-orange fw-bold mb-0">500+</h2>
+                        <span class="text-gray-400 text-sm">Schools Served</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded bg-white-05 border border-white border-opacity-10">
+                        <h2 class="text-orange fw-bold mb-0">50K+</h2>
+                        <span class="text-gray-400 text-sm">Students Impacted</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded bg-white-05 border border-white border-opacity-10">
+                        <h2 class="text-orange fw-bold mb-0">1K+</h2>
+                        <span class="text-gray-400 text-sm">Educators Trained</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="stat-card p-4 rounded bg-white-05 border border-white border-opacity-10">
+                        <h2 class="text-orange fw-bold mb-0">95%</h2>
+                        <span class="text-gray-400 text-sm">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light-gray pb-0">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6 text-dark-blue">Served:</h2>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-book-open fa-2x text-dark-blue"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Newark Board</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-graduation-cap fa-2x text-orange"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Orange PS</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-building-columns fa-2x text-muted"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Kean Univ</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-gem fa-2x text-info"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">TheGemProject</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-shield-halved fa-2x text-primary"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Berkeley</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-leaf fa-2x text-success"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">CareSparc</span>
+                    </div>
+                </div>
+                <!-- Second Row -->
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-city fa-2x text-dark-blue"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">NWDB</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-landmark fa-2x text-dark"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Virginia Edu</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-school fa-2x text-success"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">East Orange</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-w fa-2x text-orange"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">Weequahic</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-tree fa-2x text-success"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">PCE</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="served-card bg-white rounded-3 shadow-sm p-3 d-flex align-items-center justify-content-center h-100">
+                        <i class="fa-solid fa-y fa-2x text-primary"></i>
+                        <span class="ms-2 fw-bold text-sm text-dark-blue">The Y</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-light-gray position-relative overflow-hidden pb-5">
+        <div class="testimonial-glow-left"></div>
+        <div class="testimonial-glow-right"></div>
+
+        <div class="container position-relative z-1">
+            <div class="text-center mb-5">
+                <span class="badge rounded-pill border border-orange text-orange bg-orange-subtle px-4 py-2 mb-3 fw-medium">
+                    <i class="fa-regular fa-comments me-2"></i>Testimonial
+                </span>
+                <h2 class="fw-bold text-dark-blue display-6 mb-2">What Our Learners Say About<br>EBEC's Impact and Value</h2>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8 position-relative">
+                    
+                    <div class="testimonial-3d-wrapper">
+                        <div class="stack-card stack-back-1"></div>
+                        <div class="stack-card stack-back-2"></div>
+                        
+                        <div id="testimonialCarousel" class="carousel slide testimonial-main-card" data-bs-ride="carousel">
+                            <div class="carousel-inner h-100 rounded-4 overflow-hidden">
+                                
+                                <div class="carousel-item active h-100">
+                                    <div class="row g-0 h-100 bg-white">
+                                        <div class="col-md-5 p-4 d-flex align-items-center justify-content-center">
+                                            <div class="testimonial-img-square rounded-4 overflow-hidden shadow-sm position-relative">
+                                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" class="img-fluid w-100 h-100 object-fit-cover" alt="User">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body h-100 d-flex flex-column justify-content-center p-4 text-start">
+                                                <div class="mb-3 text-orange fs-2">
+                                                    <i class="fa-solid fa-quote-left"></i>
+                                                </div>
+                                                <p class="text-dark fs-6 mb-4 lh-base text-opacity-75">
+                                                    EBEC transformed my learning journey! The platform is intuitive, the courses are top-notch, and the support is exceptional. I've gained real skills and confidence.
+                                                </p>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark-blue mb-0">Atikur Rahman</h6>
+                                                    <span class="text-muted text-xs">Foundr & CEO, UIPainter</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item h-100">
+                                    <div class="row g-0 h-100 bg-white">
+                                        <div class="col-md-5 p-4 d-flex align-items-center justify-content-center">
+                                            <div class="testimonial-img-square rounded-4 overflow-hidden shadow-sm position-relative">
+                                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" class="img-fluid w-100 h-100 object-fit-cover" alt="User">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body h-100 d-flex flex-column justify-content-center p-4 text-start">
+                                                <div class="mb-3 text-orange fs-2">
+                                                    <i class="fa-solid fa-quote-left"></i>
+                                                </div>
+                                                <p class="text-dark fs-6 mb-4 lh-base text-opacity-75">
+                                                    The strategic consulting provided by EBEC has redefined our district's goals. The professionalism and depth of knowledge their team brings to the table is unmatched.
+                                                </p>
+                                                <div>
+                                                    <h6 class="fw-bold text-dark-blue mb-0">Sarah Mitchell</h6>
+                                                    <span class="text-muted text-xs">Superintendent, LAUSD</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="testimonial-nav-btn prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="testimonial-nav-btn next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding bg-gradient-orange text-white text-center pb-6">
+        <div class="container">
+            <div class="d-inline-block px-3 py-1 mb-3 border border-white border-opacity-50 rounded-pill bg-white-20 text-sm">
+                Ready to transform?
+            </div>
+            <h2 class="display-5 fw-bold mb-4">Let's Ignite a Better Tomorrow,<br> Together</h2>
+            <p class="lead mb-5 opacity-90 col-lg-8 mx-auto">Whether you're a school district, non-profit, or community organization, we're here to help you achieve your mission with expert educational support.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-5">
+                <a href="#" class="btn btn-light text-orange fw-bold rounded-pill px-4 py-3 min-w-150">Schedule Consult</a>
+                <a href="#" class="btn btn-outline-light rounded-pill px-4 py-3 min-w-150">Call Us Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section bg-dark-blue position-relative text-white">
+        
+        <div class="container position-relative z-3">
+            <div class="footer-newsletter-pill bg-white rounded-pill mx-auto">
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-6 mb-3 mb-lg-0 text-center text-lg-start ps-lg-5">
+                        <h4 class="fw-bold text-dark-blue mb-0">Sign Up today to get the<br>latest inspiration & insights</h4>
+                    </div>
+                    <div class="col-lg-6 pe-lg-5">
+                        <div class="newsletter-input-wrapper position-relative mx-auto ms-lg-auto">
+                            <input type="email" class="form-control rounded-pill border border-gray-200 ps-4 py-3 bg-light-gray text-dark" placeholder="Enter your Email Address">
+                            <button class="btn btn-dark-blue rounded-circle position-absolute top-50 end-0 translate-middle-y me-2" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-content-wrapper pt-6 pb-4 position-relative">
+            <div class="footer-dots-left"></div>
+            <div class="footer-dots-right"></div>
+
+            <div class="container position-relative z-2">
+                <div class="row g-5">
+                    <div class="col-lg-4">
+                        <a class="navbar-brand mb-4 d-block" href="#">
+                            <img src="https://www.ebec.co/assets/img/logo.png" alt="EBEC Logo" class="footer-logo">
+                        </a>
+                        <p class="text-gray-400 text-sm mb-4">
+                            201 S. Grand Ave., 1st Floor New<br>
+                            York City, NY 28020
+                        </p>
+                        <p class="text-white fw-bold mb-0">+1 (772) 290-2999</p>
+                    </div>
+
+                    <div class="col-6 col-lg-2 offset-lg-1">
+                        <h6 class="text-white fw-bold mb-4">Main navigation</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-sm">
+                            <li><a href="#" class="footer-link">Home</a></li>
+                            <li><a href="#" class="footer-link">About</a></li>
+                            <li><a href="#" class="footer-link">Academics</a></li>
+                            <li><a href="#" class="footer-link">Admission</a></li>
+                            <li><a href="#" class="footer-link">Student Life</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <h6 class="text-white fw-bold mb-4">Information for</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-sm">
+                            <li><a href="#" class="footer-link">How to Apply</a></li>
+                            <li><a href="#" class="footer-link">Dates & Deadlines</a></li>
+                            <li><a href="#" class="footer-link">Student Activities</a></li>
+                            <li><a href="#" class="footer-link">Support & Guidance</a></li>
+                            <li><a href="#" class="footer-link">Schedule a Tour</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-6 col-lg-2">
+                        <h6 class="text-white fw-bold mb-4">Quick links</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-3 text-sm">
+                            <li><a href="#" class="footer-link">Apply Now</a></li>
+                            <li><a href="#" class="footer-link">Blog</a></li>
+                            <li><a href="#" class="footer-link">Teachers</a></li>
+                            <li><a href="#" class="footer-link">Alumni Club</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center gap-4 mt-5 pt-3">
+                    <a href="#" class="social-icon-link text-white"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                    <a href="#" class="social-icon-link text-warning"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a href="#" class="social-icon-link text-white"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                    <a href="#" class="social-icon-link text-white"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
